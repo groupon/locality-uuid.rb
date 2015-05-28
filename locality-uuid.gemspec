@@ -33,11 +33,11 @@
 require File.expand_path('../lib/locality-uuid.rb', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.add_development_dependency 'mocha'
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'autotest-standalone'
-  gem.add_runtime_dependency 'macaddr'
-  gem.add_runtime_dependency 'concurrent-ruby'
+  gem.add_development_dependency 'mocha', '~> 1.1'
+  gem.add_development_dependency 'rspec', '~> 3.2'
+  gem.add_development_dependency 'autotest-standalone', '~> 4.5'
+  gem.add_runtime_dependency 'macaddr', '~> 1.7'
+  gem.add_runtime_dependency 'concurrent-ruby', '~> 0.8'
 
   gem.authors = ["Peter Bakkum"]
   gem.bindir = 'bin'
