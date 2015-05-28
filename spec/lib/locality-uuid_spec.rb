@@ -31,6 +31,12 @@
 require 'spec_helper'
 require 'locality-uuid'
 
+RSpec.configure do |config|
+  config.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
+end
+
 describe UUID do
   it 'should have the correct structure' do
     r = /^[0-9a-zA-Z]{8}\-[0-9a-zA-Z]{4}\-b[0-9a-zA-Z]{3}\-[0-9a-zA-Z]{4}\-0[0-9a-zA-Z]{11}$/
