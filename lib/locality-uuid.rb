@@ -33,7 +33,7 @@ require 'atomic'
 require 'digest/md5'
 
 class UUID
-  GEMVERSION      = '1.0.0'
+  GEMVERSION      = '1.1.0'
   @@VERSION       = 'b'
   @@MAC           = Mac.addr[7..-1].gsub(/:/, '')
   @@MIDDLE        = @@VERSION + @@MAC
