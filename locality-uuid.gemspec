@@ -37,7 +37,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'autotest-standalone'
   gem.add_runtime_dependency 'macaddr'
-  gem.add_runtime_dependency 'atomic'
+  gem.add_runtime_dependency 'concurrent-ruby'
 
   gem.authors = ["Peter Bakkum"]
   gem.bindir = 'bin'
