@@ -9,7 +9,7 @@ by Peter Bakkum and Michael Craig.
 Problems we encountered with other UUID solutions:
 
 - Collisions when used with heavy concurrency.
-- Difficult to retrieve useful information, such as the timetamp, from the id.
+- Difficult to retrieve useful information, such as the timestamp, from the id.
 - Time-based versions (such as v1) place this component at the front, meaning all generated ids 
     start with the same bytes for some time period. This was disadvantageous for us because all
     of these writes were hashed to the same shards of our distributed databases. Thus, only one
